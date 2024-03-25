@@ -74,4 +74,15 @@ var QuizUI = {
  };
 
  //Questions here//
- 
+ var Question = [
+    new Question("ESCREVER AQUI QUESTAO 1", ["ONE", "TWO", "THREE", "FOUR"] "THREE"),
+    new Question("ESCREVER AQUI QUESTAO 1", ["ONE", "TWO", "THREE", "FOUR"] "THREE"),
+    new Question("ESCREVER AQUI QUESTAO 1", ["ONE", "TWO", "THREE", "FOUR"] "THREE"),
+
+ ];
+
+ //Create Quiz
+ var quiz = new Quiz(questions);
+
+ //Display Quiz
+ QuizUI.displayNext();
