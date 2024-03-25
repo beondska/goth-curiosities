@@ -1,4 +1,4 @@
-@import url();
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 body {
     color: rgb(119, 121, 120);
@@ -7,21 +7,21 @@ body {
     line-height: 1.5;
     margin: 0;
     padding-top: 2.5em;
-    background-color: black;      
+    background-color: black;
 }
 
 .container {
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
 }
 
-.centered{
-    margin-top:90px;
+.centered {
+    margin-top: 90px;
     text-align: center;
     width: 900px;
     background-color: rgb(52, 8, 8);
     border-radius: 45px;
-    box-shadow: 0px 0px 16px 2px rgba(0,0,0,0,62);
+    box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0, 62);
 }
 
 h1 {
@@ -57,15 +57,15 @@ p {
     font-weight: 400;
     transition: opacity 0.3s;
     background-color: rgb(181, 178, 178);
-    margin:auto;
+    margin: auto;
     cursor: pointer;
 }
 
-.btn--default:hover{
+.btn--default:hover {
     opacity: 0.75;
 }
 
-.btn--default:active{
+.btn--default:active {
     opacity: initial;
 }
 
@@ -75,6 +75,6 @@ footer {
 }
 
 footer p {
-    font-size:1rem;
+    font-size: 1rem;
     margin-top: 1.375em;
 }
