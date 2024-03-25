@@ -85,6 +85,9 @@ var Question = [
     new Question("What was the most successful Gothic novel?", ["The Phantom of the Opera by Gaston Leroux", "The Castle of Otranto by Horace Walpole", "Dracula by Bram Stoker", "Strange Case of Dr Jekyll and Mr Hyde by Robert Louis Stevenson"],
         "Dracula by Bram Stoker"),
     new Question("Who is the father of Gothic architecture?", ["Abbot Suger","Peter Parler","Arnolfo di Cambio","Eugène Viollet-le-Duc "], "Abbot Suger"),
+    new Question("What is the oldest Gothic art?", ["Abbey Church of St Denis","Cathedral of Our Lady of Chartres","Duomo di Milano", "Cathedral of Notre-Dame of Reims"], "Abbey Church of St Denis"),
+    new Question("Who was the original goth?", ["The Huli people from Papua New Guinea in 700BC", "The Gutones from current Poland in the 1st century", "Gandalf from Middle Earth", "The Cure fans from all over the globe"], "The Gutones from current Poland in the 1st century"),
+
 ];
 
 //Create Quiz
