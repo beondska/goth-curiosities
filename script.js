@@ -48,7 +48,7 @@ var QuizUI = {
             this.populateIdWithHTML("choice" + i, choices[i]);
             this.guessHandler("guess" + i, choice[i]);
         }
-    }
+    },
     displayScore: function () {
         var gameOverHTML = "<h1>Game Over</h1>";
         gameOverHTML += "<h2>Your score is: " + quiz.score + " / 5 </h2>"
@@ -76,15 +76,15 @@ var QuizUI = {
 
 //Questions here//
 var Question = [
-    new Question("Who were the first writers of Gothic literature?", ["Bram Stoker", "Edgar Allan Poe", "Horace Walpole", "Ann Radcliffe"]
+    new Question("Who were the first writers of Gothic literature?", [ "Bram Stoker", "Edgar Allan Poe", "Horace Walpole", "Ann Radcliffe"],
         "Horace Walpole"),
-    new Question("Who was the first female Gothic writer?", ["Ann Radcliffe", "Mary Shelley", "Emily Jane Brontë", "Charlotte Brontë"]
+    new Question("Who was the first female Gothic writer?", ["Ann Radcliffe", "Mary Shelley", "Emily Jane Brontë", "Charlotte Brontë"],
         "Ann Radcliffe"),
-    new Question("Who was the master of Gothic form?", ["Oscar Wilde", "Edgar Allan Poe", "William Thomas Beckford", "Henry James OM"]
+    new Question("Who was the master of Gothic form?", ["Oscar Wilde", "Edgar Allan Poe", "William Thomas Beckford", "Henry James OM"],
         "Edgar Allan Poe"),
-    new Question("What was the most successful Gothic novel?", ["The Phantom of the Opera by Gaston Leroux", "The Castle of Otranto by Horace Walpole", "Dracula by Bram Stoker", "Strange Case of Dr Jekyll and Mr Hyde by Robert Louis Stevenson"]
+    new Question("What was the most successful Gothic novel?", ["The Phantom of the Opera by Gaston Leroux", "The Castle of Otranto by Horace Walpole", "Dracula by Bram Stoker", "Strange Case of Dr Jekyll and Mr Hyde by Robert Louis Stevenson"],
         "Dracula by Bram Stoker"),
-    new Question("Who is the father of Gothic architecture?", ["Abbot Suger","Peter Parler","Arnolfo di Cambio","Eugène Viollet-le-Duc "]"Abbot Suger")
+    new Question("Who is the father of Gothic architecture?", ["Abbot Suger","Peter Parler","Arnolfo di Cambio","Eugène Viollet-le-Duc "], "Abbot Suger"),
 ];
 
 //Create Quiz
