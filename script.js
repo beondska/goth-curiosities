@@ -57,5 +57,21 @@ var QuizUI = {
     populateIdWithHTML: function(id, text) {
         var element = document.getElementById(id);
         element.innerHTML = text;
+    },
+    guessHandler: function(id, guess) {
+        var element = document.getElementById(id);
+        button.onclick = function() {
+            quiz.guess(guess);
+            QuizUI.displayNext();
+        }
+    },
+
+    displayProgress: function() {
+        var currentQuestionNumber = quiz.currentQuestionIndex + 1;
+        this.populateIdWithHTML("progress", "Question" + currentQuestionNumber + "of" + quiz.questions.length);
+        
     }
-    
+ };
+
+ //Questions here//
+ 
