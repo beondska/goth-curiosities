@@ -76,17 +76,18 @@ var QuizUI = {
 
 //Questions here//
 var Question = [
-    new Question("Who were the first writers of Gothic literature?", [ "Bram Stoker", "Edgar Allan Poe", "Horace Walpole", "Ann Radcliffe"],
+    new Question("Who were the first writers of Gothic literature?", [ "Bram Stoker", "Edgar Allan Poe", "Horace Walpole", "J. R. R. Tolkien"],
         "Horace Walpole"),
-    new Question("Who was the first female Gothic writer?", ["Ann Radcliffe", "Mary Shelley", "Emily Jane Brontë", "Charlotte Brontë"],
+    new Question("Who was the first female Gothic writer?", ["Ann Radcliffe", "Mary Shelley", "Morticia Addams", "Charlotte Brontë"],
         "Ann Radcliffe"),
-    new Question("Who was the master of Gothic form?", ["Oscar Wilde", "Edgar Allan Poe", "William Thomas Beckford", "Henry James OM"],
+    new Question("Who was the master of Gothic form?", ["Oscar Wilde", "Edgar Allan Poe", "Peter Steele", "Bruce Dickinson"],
         "Edgar Allan Poe"),
-    new Question("What was the most successful Gothic novel?", ["The Phantom of the Opera by Gaston Leroux", "The Castle of Otranto by Horace Walpole", "Dracula by Bram Stoker", "Strange Case of Dr Jekyll and Mr Hyde by Robert Louis Stevenson"],
+    new Question("What was the most successful Gothic novel?", ["The Phantom of the Opera by Gaston Leroux", "The Castle of Otranto by Horace Walpole", "Dracula by Bram Stoker", "Star Wars: Return of the Jedi"],
         "Dracula by Bram Stoker"),
-    new Question("Who is the father of Gothic architecture?", ["Abbot Suger","Peter Parler","Arnolfo di Cambio","Eugène Viollet-le-Duc "], "Abbot Suger"),
-    new Question("What is the oldest Gothic art?", ["Abbey Church of St Denis","Cathedral of Our Lady of Chartres","Duomo di Milano", "Cathedral of Notre-Dame of Reims"], "Abbey Church of St Denis"),
-    new Question("Who was the original goth?", ["The Huli people from Papua New Guinea in 700BC", "The Gutones from current Poland in the 1st century", "Gandalf from Middle Earth", "The Cure fans from all over the globe"], "The Gutones from current Poland in the 1st century"),
+    new Question("Who is the father of Gothic architecture?", ["Abbot Suger","Sheldon Cooper","Luke Skywalker","Eugène Viollet-le-Duc "], "Abbot Suger"),
+    new Question("What is the oldest Gothic art?", ["Abbey Church of St Denis","Death Star","Duomo di Milano", "Cathedral of Notre-Dame of Reims"], "Abbey Church of St Denis"),
+    new Question("Who was the original goth?", ["The Simpsons", "The Gutones in the 1st century", "Gandalf from Middle Earth", "The Cure fans from all over the globe"], "The Gutones in the 1st century"),
+    new Question()
 
 ];
 
