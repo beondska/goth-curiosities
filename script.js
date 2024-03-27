@@ -42,11 +42,11 @@ var QuizUI = {
         this.populateIdWithHTML("question", quiz.getCurrentQuestion().text);
     },
     displayChoices: function () {
-        var choices = quiz.CurrentQuestion().choices;
+        var choices = quiz.getCurrentQuestion().choices;
 
         for (var i = 0; i < choices.length; i++) {
             this.populateIdWithHTML("choice" + i, choices[i]);
-            this.guessHandler("guess" + i, choice[i]);
+            this.guessHandler("guess" + i, choices[i]);
         }
     },
     displayScore: function () {
@@ -60,8 +60,10 @@ var QuizUI = {
         element.innerHTML = text;
     },
     guessHandler: function (id, guess) {
+        console.log(id,guess)
         var element = document.getElementById(id);
-        button.onclick = function () {
+        console.log(element)
+        element.onclick = function () {
             quiz.guess(guess);
             QuizUI.displayNext();
         }
