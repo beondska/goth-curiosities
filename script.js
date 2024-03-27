@@ -75,7 +75,7 @@ var QuizUI = {
 };
 
 //Questions here//
-var Question = [
+var questions = [
     new Question("Who were the first writers of Gothic literature?", [ "Bram Stoker", "Edgar Allan Poe", "Horace Walpole", "J. R. R. Tolkien"],
         "Horace Walpole"),
     new Question("Who was the first female Gothic writer?", ["Ann Radcliffe", "Mary Shelley", "Morticia Addams", "Charlotte Brontë"],
@@ -87,9 +87,7 @@ var Question = [
     new Question("Who is the father of Gothic architecture?", ["Abbot Suger","Sheldon Cooper","Luke Skywalker","Eugène Viollet-le-Duc "], "Abbot Suger"),
     new Question("What is the oldest Gothic art?", ["Abbey Church of St Denis","Death Star","Duomo di Milano", "Cathedral of Notre-Dame of Reims"], "Abbey Church of St Denis"),
     new Question("Who was the original goth?", ["The Simpsons", "The Gutones in the 1st century", "Gandalf from Middle Earth", "The Cure fans from all over the globe"], "The Gutones in the 1st century"),
-    new Question()
-
-];
+    ];
 
 //Create Quiz
 var quiz = new Quiz(questions);
