@@ -60,9 +60,7 @@ var QuizUI = {
         element.innerHTML = text;
     },
     guessHandler: function (id, guess) {
-        console.log(id,guess)
         var element = document.getElementById(id);
-        console.log(element)
         element.onclick = function () {
             quiz.guess(guess);
             QuizUI.displayNext();
@@ -78,18 +76,18 @@ var QuizUI = {
 
 //Questions here//
 var questions = [
-    new Question("Who were the first writers of Gothic literature?", [ "Bram Stoker", "Edgar Allan Poe", "Horace Walpole", "J. R. R. Tolkien"],
+    new Question("Who was the first writer of Gothic literature?", ["Bram Stoker", "Edgar Allan Poe", "Horace Walpole", "J. R. R. Tolkien"],
         "Horace Walpole"),
-    new Question("Who was the first female Gothic writer?", ["Ann Radcliffe", "Mary Shelley", "Morticia Addams", "Charlotte Brontë"],
+    new Question("Who was the first female writer of Gothic literature?", ["Ann Radcliffe", "Mary Shelley", "Morticia Addams", "Charlotte Brontë"],
         "Ann Radcliffe"),
     new Question("Who was the master of Gothic form?", ["Oscar Wilde", "Edgar Allan Poe", "Peter Steele", "Bruce Dickinson"],
         "Edgar Allan Poe"),
-    new Question("What was the most successful Gothic novel?", ["The Phantom of the Opera by Gaston Leroux", "The Castle of Otranto by Horace Walpole", "Dracula by Bram Stoker", "Star Wars: Return of the Jedi"],
+    new Question("What was the most successful Gothic novel at all times?", ["The Phantom of the Opera by Gaston Leroux", "The Castle of Otranto by Horace Walpole", "Dracula by Bram Stoker", "Star Wars: Return of the Jedi"],
         "Dracula by Bram Stoker"),
-    new Question("Who is the father of Gothic architecture?", ["Abbot Suger","Sheldon Cooper","Luke Skywalker","Eugène Viollet-le-Duc "], "Abbot Suger"),
-    new Question("What is the oldest Gothic art?", ["Abbey Church of St Denis","Death Star","Duomo di Milano", "Cathedral of Notre-Dame of Reims"], "Abbey Church of St Denis"),
-    new Question("Who was the original goth?", ["The Simpsons", "The Gutones in the 1st century", "Gandalf from Middle Earth", "The Cure fans from all over the globe"], "The Gutones in the 1st century"),
-    ];
+    new Question("Who is the father of Gothic architecture?", ["Abbot Suger", "Sheldon Cooper", "Luke Skywalker", "Eugène Viollet-le-Duc "], "Abbot Suger"),
+    new Question("What is the oldest Gothic art?", ["Abbey Church of St Denis", "Death Star", "Duomo di Milano", "Cathedral of Notre-Dame of Reims"], "Abbey Church of St Denis"),
+    new Question("Who was the original goth in history?", ["The Simpsons", "The Gutones in the 1st century", "Gandalf from Middle Earth", "The Cure fans from all over the globe"], "The Gutones in the 1st century"),
+];
 
 //Create Quiz
 var quiz = new Quiz(questions);
