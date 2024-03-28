@@ -16,10 +16,10 @@ body {
 }
 
 .centered {
-    margin-top: 90px;
+    margin-top: 30px;
     text-align: center;
     width: 900px;
-    background-color: rgb(176, 147, 147);
+    background-color: rgb(165, 152, 152);
     border-radius: 45px;
     box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0, 62);
 }
@@ -27,14 +27,14 @@ body {
 h1 {
     color: rgb(32, 30, 26);
     font-weight: 300;
-    font-size: 4em;
-    line-height: 1.1;
+    font-size: 3em;
+    line-height: 1;
     margin-top: 20px;
 }
 
 h2 {
-    color: rgb(126, 8, 8);
-    letter-spacing: 1px;
+    color: rgb(87, 13, 13);
+    letter-spacing: 0.5px;
     font-weight: 300;
     font-size: 1.5em;
     font-family: "Helvetica Neue", Helvetica, sans-serif;
@@ -43,8 +43,9 @@ h2 {
 p {
     margin: .8em 0;
     font-weight: 300;
-    font-size: 1.125em;
-    line-height: 1.5;
+    font-size: 1.5em;
+    line-height: 1.0;
+
 }
 
 .btn--default {
@@ -56,7 +57,7 @@ p {
     font-size: 0.875;
     font-weight: 400;
     transition: opacity 0.3s;
-    background-color: rgb(25, 33, 30);
+    background-color: beige;
     margin: auto;
     cursor: pointer;
 }
