@@ -87,7 +87,7 @@ var questions = [
     new Question("Who is the father of Gothic architecture?", ["Abbot Suger", "Sheldon Cooper", "Luke Skywalker", "Eugène Viollet-le-Duc "], "Abbot Suger"),
     new Question("What is the oldest Gothic art?", ["Abbey Church of St Denis", "Death Star", "Duomo di Milano", "Cathedral of Notre-Dame of Reims"], "Abbey Church of St Denis"),
     new Question("Who was the original goth in history?", ["The Simpsons", "The Gutones in the 1st century", "Gandalf from Middle Earth", "The Cure fans from all over the globe"], "The Gutones in the 1st century"),
-    new Question("Who was the first band in the Goth Rock moviment?", ["Lady Gaga", "Bauhaus","The Cure", "Monsta X"] "Bauhaus"),
+    
 ];
 
 //Create Quiz
