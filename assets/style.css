@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 body {
-    color: rgb(119, 121, 120);
+    color: rgb(11, 11, 11);
     font-size: 16px;
     font-family: "Lato", "Helvetica Neue", sans-serif;
     line-height: 1.5;
     margin: 0;
     padding-top: 2.5em;
-    background-color: black;
+    background-color: rgb(54, 12, 12);
 }
 
 .container {
@@ -19,21 +19,21 @@ body {
     margin-top: 90px;
     text-align: center;
     width: 900px;
-    background-color: rgb(52, 8, 8);
+    background-color: rgb(176, 147, 147);
     border-radius: 45px;
     box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0, 62);
 }
 
 h1 {
-    color: bisque;
+    color: rgb(32, 30, 26);
     font-weight: 300;
-    font-size: 2.626em;
+    font-size: 4em;
     line-height: 1.1;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 h2 {
-    color: rgb(23, 23, 23);
+    color: rgb(126, 8, 8);
     letter-spacing: 1px;
     font-weight: 300;
     font-size: 1.5em;
@@ -56,7 +56,7 @@ p {
     font-size: 0.875;
     font-weight: 400;
     transition: opacity 0.3s;
-    background-color: rgb(181, 178, 178);
+    background-color: rgb(25, 33, 30);
     margin: auto;
     cursor: pointer;
 }
