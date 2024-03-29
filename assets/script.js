@@ -93,6 +93,18 @@ var QuizUI = {
         var progressText = "Question " + currentQuestionNumber + " of " + this.quiz.questions.length;
         this.populateIdWithHTML("progress", progressText);
     }
+
+    setupStartOverButton: function () {
+        var startOverButton = document.getElementById('startOver');
+        var self = this;
+        if (startOverButton) {
+            startOverButton.addEventListener('click', function () {
+                self.quiz.score = 0;
+                self.quiz.currentQuestionIndex = 0;
+                self.displayNext();
+            });
+        }
+    }
 };
 
 //Questions here//
