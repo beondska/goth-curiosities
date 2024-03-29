@@ -97,88 +97,6 @@ var QuizUI = {
     
 };
 
-var QuizUI = {
-    quiz: new Quiz([]), // Create a new instance of Quiz
-
-    init: function (questions) {
-        this.quiz.questions = questions; // Set questions for the quiz
-        this.displayNext(); // Start displaying the quiz
-        this.setupStartOverButton(); // Setup the "Start Over" button
-    },
-
-    displayNext: function () {
-        if (this.quiz.hasEnded()) {
-            this.displayScore();
-        } else {
-            this.displayQuestion();
-            this.displayChoices();
-            this.displayProgress();
-        }
-    },
-
-    displayQuestion: function () {
-        this.populateIdWithHTML("question", this.quiz.getCurrentQuestion().text);
-    },
-
-    displayChoices: function () {
-        var choices = this.quiz.getCurrentQuestion().choices;
-
-        for (var i = 0; i < choices.length; i++) {
-            this.populateIdWithHTML("choice" + i, choices[i]);
-            this.guessHandler("guess" + i, choices[i]);
-        }
-    },
-
-    displayScore: function () {
-        var gameOverHTML = "<h1>Game Over</h1>";
-        gameOverHTML += "<h2>Your score is: " + this.quiz.score + " / " + this.quiz.questions.length + "</h2>";
-        gameOverHTML += "<button id='startOver'>Start Over</button>"; // Add Start Over button
-        this.populateIdWithHTML("quiz", gameOverHTML);
-
-        this.setupStartOverButton(); // Setup the "Start Over" button again after it's displayed
-    },
-
-    populateIdWithHTML: function (id, text) {
-        var element = document.getElementById(id);
-        if (element) {
-            element.innerHTML = text;
-        } else {
-            console.error("Element with id " + id + " not found.");
-        }
-    },
-
-    guessHandler: function (id, guess) {
-        var element = document.getElementById(id);
-        var self = this;
-        if (element) {
-            element.onclick = function () {
-                self.quiz.guess(guess);
-                self.displayNext();
-            };
-        } else {
-            console.error("Element with id " + id + " not found.");
-        }
-    },
-
-    displayProgress: function () {
-        var currentQuestionNumber = this.quiz.currentQuestionIndex + 1;
-        var progressText = "Question " + currentQuestionNumber + " of " + this.quiz.questions.length;
-        this.populateIdWithHTML("progress", progressText);
-    },
-
-    setupStartOverButton: function () {
-        var startOverButton = document.getElementById('startOver');
-        var self = this;
-        if (startOverButton) {
-            startOverButton.addEventListener('click', function () {
-                self.quiz.score = 0;
-                self.quiz.currentQuestionIndex = 0;
-                self.displayNext();
-            });
-        }
-    }
-};
-
 
 //Questions here//
 var questions = [
@@ -194,7 +112,7 @@ var questions = [
     new Question("What is the oldest Gothic art?", ["Abbey Church of St Denis", "Death Star", "Duomo di Milano", "Cathedral of Notre-Dame of Reims"], "Abbey Church of St Denis"),
     new Question("Who was the original goth in history?", ["The Simpsons", "The Gutones in the 1st century", "Gandalf from Middle Earth", "The Cure fans from all over the globe"], "The Gutones in the 1st century"),
   ];
-  
+
 
 //Create Quiz
 var quiz = new Quiz(questions);
