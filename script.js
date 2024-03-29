@@ -12,7 +12,7 @@ Quiz.prototype.guess = function (answer) {
 };
 
 Quiz.prototype.getCurrentQuestion = function () {
-    return this.questions[this.currentQuestionIndex]
+    return this.questions[this.currentQuestionIndex];
 };
 
 Quiz.prototype.hasEnded = function () {
@@ -28,9 +28,17 @@ function Question(text, choices, answer) {
 Question.prototype.isCorrectAnswer = function (choice) {
     return this.answer === choice;
 };
+
 var QuizUI = {
+    quiz: new Quiz([]), // Create a new instance of Quiz
+
+    init: function (questions) {
+        this.quiz.questions = questions; // Set questions for the quiz
+        this.displayNext(); // Start displaying the quiz
+    },
+
     displayNext: function () {
-        if (quiz.hasEnded()) {
+        if (this.quiz.hasEnded()) {
             this.displayScore();
         } else {
             this.displayQuestion();
@@ -38,39 +46,52 @@ var QuizUI = {
             this.displayProgress();
         }
     },
+
     displayQuestion: function () {
-        this.populateIdWithHTML("question", quiz.getCurrentQuestion().text);
+        this.populateIdWithHTML("question", this.quiz.getCurrentQuestion().text);
     },
+
     displayChoices: function () {
-        var choices = quiz.getCurrentQuestion().choices;
+        var choices = this.quiz.getCurrentQuestion().choices;
 
         for (var i = 0; i < choices.length; i++) {
             this.populateIdWithHTML("choice" + i, choices[i]);
             this.guessHandler("guess" + i, choices[i]);
         }
     },
+
     displayScore: function () {
         var gameOverHTML = "<h1>Game Over</h1>";
-        gameOverHTML += "<h2>Your score is: " + quiz.score + " / 7 </h2>"
+        gameOverHTML += "<h2>Your score is: " + this.quiz.score + " / " + this.quiz.questions.length + "</h2>";
         this.populateIdWithHTML("quiz", gameOverHTML);
     },
 
     populateIdWithHTML: function (id, text) {
         var element = document.getElementById(id);
-        element.innerHTML = text;
+        if (element) {
+            element.innerHTML = text;
+        } else {
+            console.error("Element with id " + id + " not found.");
+        }
     },
+
     guessHandler: function (id, guess) {
         var element = document.getElementById(id);
-        element.onclick = function () {
-            quiz.guess(guess);
-            QuizUI.displayNext();
+        var self = this;
+        if (element) {
+            element.onclick = function () {
+                self.quiz.guess(guess);
+                self.displayNext();
+            };
+        } else {
+            console.error("Element with id " + id + " not found.");
         }
     },
 
     displayProgress: function () {
-        var currentQuestionNumber = quiz.currentQuestionIndex + 1;
-        this.populateIdWithHTML("progress", "Question" + currentQuestionNumber + "of" + quiz.questions.length);
-
+        var currentQuestionNumber = this.quiz.currentQuestionIndex + 1;
+        var progressText = "Question " + currentQuestionNumber + " of " + this.quiz.questions.length;
+        this.populateIdWithHTML("progress", progressText);
     }
 };
 
