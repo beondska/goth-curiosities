@@ -46,24 +46,17 @@ This header exists on every page.
 
 
 
-Next, we have **Hero Image**
-![](documents/)
-- This beautiful image anchors all the pages to capture's the user attention. Author is anonymous.
-
-
-
-
-Furthermore, **The Footer**
+**The Footer**
 This footer exists on every page.
 - This directs the user to our external social media links, in order: Instagram, YouTube, Twitter and Facebook pages.
-![All pages footer](documents/thyvictorian-footer.png)
+![All pages footer]()
 
 
 
 **Error 404**
 - This section consist of an Error page. Information is shown when the user inputs a non existing webpage.
 - Alert and information that the page cannot be reached and also a link to take the user back to the homepage.
-![ 404Error page](documents/404error.png)
+![ 404Error page]()
 
 All pages were responsive and worked on smaller screens as well.  
 
@@ -106,7 +99,11 @@ All pages were tested to ensure responsiveness on screen sizes as defined in WCA
 Used within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
 
 
-![Diagnose performance issues](documents/)
+![Diagnose performance issues](documents/light-performance.png)
+
+![Accessibility](documents/light-accessibility.png)
+
+
 
 
 # KNOWN ISSUES
