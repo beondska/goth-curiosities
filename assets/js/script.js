@@ -162,10 +162,9 @@ const questions = [
     },
   };
   
-  document.getElementById('startQuizBtn').addEventListener('click', function() {
+  document.getElementById('restartQuizBtn').addEventListener('click', function() {
     // Redirect to the quiz page
-    window.location.href = 'index.html';
-
+    window.location.href = '/';
   });
 
 // Get references to the welcome and quiz divs
