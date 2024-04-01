@@ -1,5 +1,5 @@
-//Questions here//
-var questions = [
+//All questions here //
+const questions = [
     new Question(
       "Who was the first writer of Gothic literature?",
       ["Bram Stoker", "Edgar Allan Poe", "Horace Walpole", "J. R. R. Tolkien"],
@@ -64,8 +64,8 @@ var questions = [
     this.currentQuestionIndex = 0;
   }
   
-  //Create Quiz
-  var quiz = new Quiz(questions);
+  //Create Quiz here
+  let quiz = new Quiz(questions);
   
   Quiz.prototype.guess = function (answer) {
     if (this.getCurrentQuestion().isCorrectAnswer(answer)) {
@@ -92,10 +92,10 @@ var questions = [
     return this.answer === choice;
   };
   
-  var QuizUI = {
+  let QuizUI = {
     init: function (questions) {
-      quiz.questions = questions; // Set questions for the quiz
-      this.displayNext(); // Start displaying the quiz
+      quiz.questions = questions; // Set questions for the quiz here
+      this.displayNext(); // Start displaying the quiz here
     },
   
     displayNext: function () {
@@ -113,16 +113,16 @@ var questions = [
     },
   
     displayChoices: function () {
-      var choices = quiz.getCurrentQuestion().choices;
+      let choices = quiz.getCurrentQuestion().choices;
   
-      for (var i = 0; i < choices.length; i++) {
+      for (let i = 0; i < choices.length; i++) {
         this.populateIdWithHTML("choice" + i, choices[i]);
         this.guessHandler("guess" + i, choices[i]);
       }
     },
   
     displayScore: function () {
-      var gameOverHTML = "<h1>Game Over</h1>";
+      let gameOverHTML = "<h1>Game Over</h1>";
       gameOverHTML +=
         "<h2>Your score is: " +
         quiz.score +
@@ -133,7 +133,7 @@ var questions = [
     },
   
     populateIdWithHTML: function (id, text) {
-      var element = document.getElementById(id);
+      let element = document.getElementById(id);
       if (element) {
         element.innerHTML = text;
       } else {
@@ -142,8 +142,8 @@ var questions = [
     },
   
     guessHandler: function (id, guess) {
-      var element = document.getElementById(id);
-      var self = this;
+      let element = document.getElementById(id);
+      let self = this;
       if (element) {
         element.onclick = function () {
           quiz.guess(guess);
@@ -155,13 +155,35 @@ var questions = [
     },
   
     displayProgress: function () {
-      var currentQuestionNumber = quiz.currentQuestionIndex + 1;
-      var progressText =
+      let currentQuestionNumber = quiz.currentQuestionIndex + 1;
+      let progressText =
         "Question " + currentQuestionNumber + " of " + quiz.questions.length;
       this.populateIdWithHTML("progress", progressText);
     },
   };
   
+  document.getElementById('startQuizBtn').addEventListener('click', function() {
+    // Redirect to the quiz page
+    window.location.href = 'index.html';
+
+  });
+
+// Get references to the welcome and quiz divs
+const welcomeDiv = document.getElementById("welcome");
+const quizDiv = document.getElementById("quiz");
+
+// Get reference to the start button
+const startButton = document.getElementById("startQuizBtn");
+
+// Add click event listener to the start button
+startButton.addEventListener("click", function() {
+  // Hide the welcome div
+  welcomeDiv.classList.add("hidden");
+  // Show the quiz div
+  quizDiv.classList.remove("hidden");
+});
+  
+   
   //Display Quiz
   QuizUI.displayNext();
   
