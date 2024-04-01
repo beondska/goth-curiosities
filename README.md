@@ -24,7 +24,7 @@ You can reach the page [here](https://beondska.github.io/goth-curiosities/)
 
 The intention behind this project is 
 
-![Goth Curiosities Quiz on different devices](documents/)
+![Goth Curiosities Quiz on different devices](documents/mockup.jpg)
 
 
 # ABOUT
@@ -63,7 +63,7 @@ All pages were responsive and worked on smaller screens as well.
 ## Design
 ### Color Scheme
 
-![Color Scheme](documents/)
+![Color Scheme](documents/coolors.png)
 For this project I choose colors that felt retro, intimate and timeless. This color-scheme reflects the epoch in its best.
 
 
