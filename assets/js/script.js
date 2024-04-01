@@ -170,6 +170,7 @@ const questions = [
 // Get references to the welcome and quiz divs
 const welcomeDiv = document.getElementById("welcome");
 const quizDiv = document.getElementById("quiz");
+const restartQuizBtn = document.getElementById("restartQuizBtn");
 
 // Get reference to the start button
 const startButton = document.getElementById("startQuizBtn");
@@ -180,6 +181,7 @@ startButton.addEventListener("click", function() {
   welcomeDiv.classList.add("hidden");
   // Show the quiz div
   quizDiv.classList.remove("hidden");
+  restartQuizBtn.classList.remove("hidden");
 });
   
    
