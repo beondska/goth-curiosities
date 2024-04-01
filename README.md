@@ -121,4 +121,4 @@ I published the GitHub page with my website by going to my repository settings a
 # CREDITS AND ACKNOWLEDGEMENTS
 I would like to extend some thanks, not only to the online resources, but also to my Mother and my Father who taught me how to read and the endearing love for books.
 
- To my mentor Rory Patrick who aided me when everything was a bit chaotic and some of my new "Slack" friends, expecially Andreas that aided me when I needed the most.
+ To my mentor Rory Patrick who helped me when everything was a confusing and my friends: Andreas J. for the strength when I wanted to give up and to Willian, who aided me when I needed the most.
