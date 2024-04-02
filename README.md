@@ -111,7 +111,8 @@ I published the GitHub page with my website by going to my repository settings a
 # CREDITS AND ACKNOWLEDGEMENTS
 I would like to extend some thanks, not only to the online resources, but also to my Mother and my Father who taught me how to read and the endearing love for books.
 
- To my partime mentor and friend Willian, who aided me when I needed the most even thought we no longer live in my homecountry and to my musitian friend Andreas J., for the strength and light when I wanted to give up and the humbles to explain the terms I couldnt figure out later in the night. Thank you.
+ To my partime mentor and friend Willian, who aided me when I needed the most even thought we live in diferent time zones, he always make it work. To my friend Caroline for the emotional support when I needed and to my friend Andreas J., for the strength and light when I wanted to give up and the humbles to explain the terms I couldnt figure out later in the night. Thank you.
 
- Credits to my friend's tutorial: https://www.youtube.com/watch?v=NjEqc-SVcYU  Miguel Maia 
- Also credit to the tutorial video sent by my mentor that helped me very much: https://www.youtube.com/watch?v=riDzcEQbX6k
+ Credits to my friend's tutorial: https://www.youtube.com/watch?v=NjEqc-SVcYU  Miguel Maia .
+
+ Also credit to the tutorial video sent by my mentor that helped me very much: https://www.youtube.com/watch?v=riDzcEQbX6k .
