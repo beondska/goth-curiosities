@@ -164,7 +164,7 @@ const questions = [
   
   document.getElementById('restartQuizBtn').addEventListener('click', function() {
     // Redirect to the quiz page
-    window.location.href = '/';
+    window.location.reload();
   });
 
 // Get references to the welcome and quiz divs
