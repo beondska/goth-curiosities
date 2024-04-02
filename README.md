@@ -22,7 +22,7 @@ You can reach the page [here](https://beondska.github.io/goth-curiosities/)
 # INTRODUCTION
 
 
-The intention behind this project is 
+The intention behind this project is to create a small quiz to some of my 
 
 ![Goth Curiosities Quiz on different devices](documents/mockup.jpg)
 
